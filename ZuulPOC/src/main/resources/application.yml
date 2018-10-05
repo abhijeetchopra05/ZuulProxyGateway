@@ -1,0 +1,17 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: Trying
+  cloud:
+    consul:
+      discovery:
+        healthCheckInterval: 15s
+
+management:
+  security:
+    enabled: false
+
+zuul:
+  ignoredServices: 'consul,Trying'
